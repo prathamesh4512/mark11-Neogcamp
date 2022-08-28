@@ -7,10 +7,10 @@ export default function App() {
   const [luck, setLuck] = useState("");
 
   function checkLuck() {
-    if (luckyNum <= 0) {
-      return setLuck("Lucky number must be greater than zero");
-    }
-    if (dob && luckyNum) {
+    // if (luckyNum <= 0) {
+    //   return setLuck("Lucky number must be greater than zero");
+    // }
+    if (dob && luckyNum > 0) {
       let sum = 0;
       let newDob = dob.replaceAll("-", "");
       for (let digit of newDob) {
@@ -19,8 +19,10 @@ export default function App() {
       sum % luckyNum
         ? setLuck(`${luckyNum} is not that lucky 😕`)
         : setLuck(`${luckyNum} is a lucky number!! 🥳`);
-    } else {
+    } else if (!dob || !luckyNum) {
       setLuck("Enter both the fields to check luck 😅");
+    } else {
+      setLuck("Lucky number must be greater than zero");
     }
   }
 
