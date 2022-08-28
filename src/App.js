@@ -7,6 +7,9 @@ export default function App() {
   const [luck, setLuck] = useState("");
 
   function checkLuck() {
+    if (luckyNum <= 0) {
+      return setLuck("Lucky number must be greater than zero");
+    }
     if (dob && luckyNum) {
       let sum = 0;
       let newDob = dob.replaceAll("-", "");
@@ -24,7 +27,9 @@ export default function App() {
   return (
     <div className="App">
       <nav>
-        <h1 class="header">Is your Birthday Lucky? 🤔</h1>
+        <h1 class="header">
+          Is your Birthday Lucky? <span>🤔</span>
+        </h1>
       </nav>
 
       <main>
