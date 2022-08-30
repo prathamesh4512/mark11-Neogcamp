@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
+import { Icon } from "react-icons-kit";
+import { github } from "react-icons-kit/icomoon/github";
+import { linkedin2 } from "react-icons-kit/icomoon/linkedin2";
 
 export default function App() {
   const [dob, setDob] = useState("");
@@ -33,7 +36,6 @@ export default function App() {
           Is your Birthday Lucky? <span>🤔</span>
         </h1>
       </nav>
-
       <main>
         <label for="date-of-birth">Date Of Birth</label>
         <input
@@ -58,6 +60,29 @@ export default function App() {
 
         <h3>{luck}</h3>
       </main>
+      <footer class="footer">
+        <p class="footer-copyright">© | 2022 | Prathamesh</p>
+        <ul class="no-list-style horizontal-list text-center">
+          <li>
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.linkedin.com/in/prathameshsawant20/"
+            >
+              <Icon icon={linkedin2} />
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              target="_blank"
+              href="https://github.com/prathamesh4512"
+            >
+              <Icon icon={github} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }

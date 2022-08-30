@@ -12,7 +12,7 @@
 body {
   width: 50%;
   min-width: 400px;
-  margin: 15vh auto;
+  margin: 50px auto;
   font-size: 1.2rem;
   background-color: var(--primary-color);
 }
@@ -32,7 +32,7 @@ input {
   padding: 1rem;
   font-size: inherit;
   border-radius: 1rem;
-  max-width: 200px;
+  max-width: 250px;
   width: 70%;
   min-width: 150px;
   text-align: center;
@@ -52,4 +52,34 @@ button {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.no-list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.no-list-style li {
+  font-weight: 100;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.footer-header {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
