@@ -9,5 +9,8 @@ A website which checks whether your birthday is lucky or not.
 ## TechStack
 - ReactJs
 
+## Live Link
+https://vwoqkm.csb.app/
+
 ## Preview
 ![image](https://user-images.githubusercontent.com/87566298/188257171-0e13eaa7-55d4-43b8-b811-86f86898c5fb.png)
