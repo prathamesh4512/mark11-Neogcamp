@@ -4,7 +4,7 @@ A website which checks whether your birthday is lucky or not.
 ## How to Use ?
 - Enter You Birthdate
 - Enter any Lucky Number 
-- Click on Tell Me to check Luck
+- Click on Am I Lucky to check Luck
 
 ## TechStack
 - ReactJs
